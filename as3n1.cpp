@@ -28,7 +28,7 @@ int main(){
 }
 void Hcompany::setter(){
     int i,j;
-    for(i=0;i<1;i++){
+    for(i=0;i<3;i++){
         cout<<"enter the name of the company and "<<endl;
         cin>>pc[i].name;
         cin.ignore();
@@ -41,7 +41,7 @@ void Hcompany::setter(){
         cout<<"what kind of company is it write \"head\" or \"branch\""<<endl;
         cin>>pc[i].type;
         cin.ignore();
-        for(j=0;j<1;j++){
+        for(j=0;j<5;j++){
             cout<<endl<<"enter the name of the employee and "<<endl;
             cin>>pc[i].pr[j].ename;
             cin.ignore();
@@ -61,9 +61,9 @@ void Hcompany::setter(){
 }
 void Hcompany::getter(){
     int i,j;
-    for(i=0;i<1;i++){
+    for(i=0;i<3;i++){
         cout<<"department "<<pc[i].type<<endl;
-        for(j=0;j<1;j++){
+        for(j=0;j<5;j++){
             cout<<"name "<<pc[i].pr[j].ename<<endl<<"address "<<pc[i].pr[j].address<<endl<<"working shift "<<pc[i].pr[j].duration<<endl<<"working hour "<<pc[i].pr[j].workinghr<<endl;
 
         }
