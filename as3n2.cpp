@@ -65,14 +65,14 @@ void Hcompany::getter(){
         if (pc[k].type=="head"){
             for(i=0;i<1;i++){
         cout<<"department "<<pc[k].type<<endl;
-        for(j=0;j<1;j++){
+        for(j=0;j<5;j++){
             cout<<"name "<<pc[k].pr[j].ename<<endl<<"address "<<pc[k].pr[j].address<<endl<<"working shift "<<pc[k].pr[j].duration<<endl<<"working hour "<<pc[k].pr[j].workinghr<<endl;
 
         }
     }
     break;
         }
-        if(k==1){
+        if(k==2){
             cout<<"head depatrment not found."<<endl;
         }
     }
