@@ -36,6 +36,7 @@ void complex_arith::set_arithmetic(){
 
 }
 void complex_arith::get_arithmetic(){
+     cout<<f1<<'+'<<f2<<'i'<<endl<<s1<<'+'<<s2<<'i'<<endl;
     switch (a){
         case '+':
         cout<<"sum : "<<f1+s1<<'+'<<f2+s2<<'i';
