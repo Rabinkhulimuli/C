@@ -14,7 +14,7 @@ class BankAccount{
     void deposit();
     void withdraw();
     void accinfo();
-    void total_ope();
+    static void total_ope();
 };
 int main(){
     int temp,x=0;
@@ -77,5 +77,5 @@ void BankAccount::accinfo(){
     cout<<"Account no : "<<accountno<<endl <<"Name :"<<name<<endl<<"Balance :"<<balance<<endl;
 }
 void BankAccount::total_ope(){
-    cout<<"Balance :"<<balance<<endl <<"You deposited "<<depot<<" times"<<endl<<"You withdrew "<<withdr<<" times"<<endl;
+    cout<<"You deposited "<<depot<<" times"<<endl<<"You withdrew "<<withdr<<" times"<<endl;
 }
