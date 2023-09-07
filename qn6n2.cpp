@@ -61,7 +61,7 @@ void vehicle::getter(){
 void car::setcar(){
     setter();
     cout<<"enter the brake type"<<endl;
-    getline(cin,brake_type);
+    getline(cin, brake_type);
     cin.ignore();
 }
 void car::carinfo(){
@@ -72,6 +72,7 @@ void boat::setboat(){
     setter();
     cout<<"enter density of boat"<<endl;
     cin>>density;
+    cin.ignore();
 }
 void boat::boatinfo(){
     getter();
@@ -81,6 +82,7 @@ void aeroplane::setplane(){
     setter();
     cout<<"enter number of propeller"<<endl;
     cin>>no_propeller;
+    cin.ignore();
 }
 void aeroplane::planeinfo(){
     getter();
