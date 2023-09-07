@@ -18,6 +18,12 @@ class living_being{
     void getter(animal);
     void setlb();
 };
+class matter{
+    private:
+    string composition;
+    public:
+    virtual void setmat()=0;
+};
 int main(){
     animal ob;
     ob.setter();
