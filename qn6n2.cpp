@@ -34,6 +34,9 @@ class aeroplane:public vehicle{
     void planeinfo();
 };
 int main(){
+    boat bt;
+    bt.setboat();
+    bt.boatinfo();
     car cr;
     cr.setcar();
     cr.carinfo();
@@ -56,9 +59,10 @@ void vehicle::getter(){
     cout<<"color :"<<color<<endl<<"model number :"<<model_number<<endl<<"Price"<<price<<endl;
 }
 void car::setcar(){
-    getter();
+    setter();
     cout<<"enter the brake type"<<endl;
     getline(cin,brake_type);
+    cin.ignore();
 }
 void car::carinfo(){
     getter();
