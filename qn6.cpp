@@ -3,40 +3,35 @@
 #include<string>
 using namespace std;
 class Person{
-    private:
+    protected:
     string name;
     int age;
     public:
     void sett();
     void gett();
 };
-class author{
+class author:public Person{
     private:
     int collection_no;
-    Person *id;
     public:
-    author(){}
-    author(Person *a){
-        id=a;
-    }
+    
     void setter();
     void getter();
 };
 int main(){
-    Person ob;
-    ob.sett();
-    author json(&ob);
-    json.setter();
-    json.getter();
+    author ob;
+    ob.setter();
+    ob.getter();
     return 0;
 }
 void author::setter(){
+    sett();
     cout<<"number of books written"<<endl;
     cin>>collection_no;
     cin.ignore();
 };
 void author::getter(){
-    id->gett();
+    gett();
     cout<<"books written :"<<collection_no<<endl;
 }
 void Person::sett(){
