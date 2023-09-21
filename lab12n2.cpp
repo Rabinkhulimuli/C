@@ -22,7 +22,7 @@ class person{
     }
 };
 int main(){
-    person ob[5];
+    person ob[5],ob2[5];
     for(int i=0;i<5;i++){
         ob[i].setter();
     ofstream wfile;
@@ -30,10 +30,14 @@ int main(){
     wfile.close();
     wfile.open("persondata.bin",ios::binary|ios::app);
     wfile.write((char*)&ob[i],sizeof(ob[i]));
-    wfile.close();}
+    wfile.close();
+    ifstream rfile("persondata.bin");
+    rfile.read((char*)(ob2+i),sizeof(ob2[i]));
+    rfile.close();
+    }
      for(int i=0;i<5;i++){
-    if(ob[i].getage()>=30){
-    ob[i].getter();
+    if(ob2[i].getage()>=30){
+    ob2[i].getter();
     }
     }
     return 0;
